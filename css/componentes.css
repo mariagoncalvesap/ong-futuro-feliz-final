@@ -1,0 +1,107 @@
+/*  BOTÕES */
+.btn {
+    background-color: #001b38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+/* CARDS */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*  FORMULÁRIOS  */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #001b38;
+    outline: none;
+}
+
+
+main p,
+section p,
+article p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/*  FORMULÁRIO DE CADASTRO  */
+form {
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;               
+    max-width: 600px;        
+    margin: 20px auto;       
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;               
+}
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+    color: #001b38;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;             
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #001b38;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #001b38;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}

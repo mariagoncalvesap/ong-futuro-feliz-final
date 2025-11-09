@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Futuro Feliz</title>
+
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+  
+  <header>
+    <h1>ONG Futuro Feliz</h1>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    <nav>
+      <ul id="menu" class="menu">
+        <li><a href="#" onclick="carregarPagina('home')">Início</a></li>
+        <li><a href="#" onclick="carregarPagina('projetos')">Projetos</a></li>
+        <li><a href="#" onclick="carregarPagina('cadastro')">Cadastro</a></li>
+        <li><a href="#" onclick="carregarPagina('login')">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section id="saudacao" class="saudacao"></section>
+
+ 
+  <main id="conteudo"></main>
+
+ 
+  <footer>
+    <p>&copy; 2025 ONG Futuro Feliz. Todos os direitos reservados.</p>
+  </footer>
+
+  
+ 
+<script src="js/storage.js"></script>
+<script src="js/formValidation.js"></script>
+<script src="js/router.js"></script>
+<script src="js/main.js"></script>
+</html>

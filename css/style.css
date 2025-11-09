@@ -1,0 +1,102 @@
+/*  SISTEMA DE DESIGN  */
+:root {
+    --cor-primaria: #001b38;
+    --cor-secundaria: #ddff03;
+    --cor-fundo: #f4f7fa;
+    --cor-texto: #333;
+    --cor-botao-hover: #004080;
+
+    --fonte-principal: "Poppins", Arial, sans-serif;
+
+    --espaco-8: 8px;
+    --espaco-16: 16px;
+    --espaco-24: 24px;
+    --espaco-32: 32px;
+    --espaco-48: 48px;
+    --espaco-64: 64px;
+}
+
+/* ESTILOS GERAIS  */
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* CABEÇALHO */
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b4ff00; 
+}
+
+/*  CONTEÚDO PRINCIPAL */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/*  RODAPÉ  */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+/*  TÍTULOS  */
+h1 {
+    color: var(--cor-secundaria);
+}
+
+h2, h3 {
+    color: var(--cor-primaria);
+}
+
+/*  IMAGENS */
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/*  BOTÕES  */
+button {
+    background-color: var(--cor-primaria);
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
