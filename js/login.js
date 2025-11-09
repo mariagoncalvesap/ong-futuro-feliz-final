@@ -1,4 +1,4 @@
-export function inicializarLogin() {
+function inicializarLogin() {
   const form = document.getElementById("loginForm");
   if (!form) return;
 
@@ -25,10 +25,19 @@ export function inicializarLogin() {
 
     if (userFound) {
       localStorage.setItem("usuarioLogado", JSON.stringify(userFound));
+
       alert(`Bem-vindo(a), ${userType}!`);
-      window.location.hash = "#home"; 
+      // Exibe saudação no topo do site
+      const saudacao = document.getElementById("saudacao");
+      if (saudacao) {
+        saudacao.textContent = `Olá, ${userType}! 💚 Bem-vindo(a) de volta!`;
+      }
+
+      // Carrega a home automaticamente
+      carregarPagina("home");
     } else {
-      errorMsg.textContent = "⚠️ E-mail, senha ou tipo de usuário incorreto!";
+      if (errorMsg)
+        errorMsg.textContent = "⚠️ E-mail, senha ou tipo de usuário incorreto!";
     }
   });
 }

@@ -1,4 +1,4 @@
-export function inicializarFormulario() {
+function inicializarFormulario() {
   const formulario = document.getElementById("formCadastro");
   if (!formulario) return;
 
@@ -8,7 +8,6 @@ export function inicializarFormulario() {
   const erro = document.getElementById("erro");
   const saudacao = document.getElementById("saudacao");
 
-  
   function aplicarMascara(input, mascara) {
     input.addEventListener('input', () => {
       let valor = input.value.replace(/\D/g, '');
@@ -29,7 +28,6 @@ export function inicializarFormulario() {
   aplicarMascara(telefoneInput, '(##) #####-####');
   aplicarMascara(cepInput, '#####-###');
 
-  
   formulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
