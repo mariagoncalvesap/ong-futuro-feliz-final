@@ -1,82 +1,79 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos - ONG Futuro Feliz</title>
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/componentes.css">
-<link rel="stylesheet" href="css/responsivo.css">
+<main aria-labelledby="titulo-projetos">
+  <section aria-labelledby="titulo-projetos">
+    <h2 id="titulo-projetos">Nossos Projetos</h2>
+    <p>
+      A Futuro Feliz cria oportunidades para jovens e famílias, 
+      com projetos voltados à educação, cultura e bem-estar emocional.
+    </p>
+  </section>
 
-</head>
-<body>
+  <section aria-labelledby="titulo-jovem-futuro">
+    <article>
+      <h3 id="titulo-jovem-futuro">🖥️ Projeto Jovem Futuro</h3>
+      <img 
+        src="imagens/projeto1.jpg" 
+        alt="Jovens participando de uma aula de informática em um laboratório moderno" 
+        width="400"
+      >
+      <p>
+        O projeto oferece cursos gratuitos de informática básica e cidadania digital 
+        para jovens. O objetivo é preparar os participantes para o mercado de trabalho
+        e incentivar o uso consciente da tecnologia.
+      </p>
+    </article>
+  </section>
 
+  <section aria-labelledby="titulo-cuidar-crescer">
+    <article>
+      <h3 id="titulo-cuidar-crescer">💬 Projeto Cuidar é Crescer</h3>
+      <img 
+        src="imagens/projeto2.jpg" 
+        alt="Psicóloga conduzindo uma roda de conversa com jovens" 
+        width="400"
+      >
+      <p>
+        Iniciativa que promove rodas de conversa e atendimento psicológico gratuito 
+        para jovens em situação de vulnerabilidade. Acreditamos que saúde mental também é base para o futuro.
+      </p>
+    </article>
+  </section>
 
-    <main>
+  <section aria-labelledby="titulo-arte-vida">
+    <article>
+      <h3 id="titulo-arte-vida">🎨 Projeto Arte e Vida</h3>
+      <img 
+        src="imagens/projeto3.jpg" 
+        alt="Jovens pintando murais coloridos em uma oficina de arte" 
+        width="400"
+      >
+      <p>
+        Através da arte, incentivamos a expressão criativa e o fortalecimento da identidade. 
+        Oficinas de pintura, dança e teatro ajudam os jovens a desenvolverem confiança e trabalho em equipe.
+      </p>
+    </article>
+  </section>
 
-        <section>
-            <h2>Nossos Projetos</h2>
-            <p>
-                A Futuro Feliz cria oportunidades para jovens e famílias, 
-                com projetos voltados à educação, cultura e bem-estar emocional.
+  <section aria-labelledby="titulo-voluntariado">
+    <h2 id="titulo-voluntariado">Voluntariado</h2>
+    <p>
+      Quer fazer parte dessa transformação?
+      Inscreva-se como voluntário e ajude a levar oportunidades para quem mais precisa.
+    </p>
+    <a href="#" onclick="carregarPagina('cadastro')" class="btn" aria-label="Ir para a página de cadastro de voluntário">
+      Quero ser voluntário
+    </a>
+  </section>
 
-            
-                </p>
-                </section>
-
-                <section>
-            <article>
-                <h3>🖥️ Projeto Jovem Futuro</h3>
-                <img src="imagens/projeto1.jpg" alt="Jovens participando de aula de informática" width="400">
-                <p>
-                    O projeto oferece cursos gratuitos de informática básica e cidadania digital 
-                    para jovens. O objetivo é preparar os participantes para o mercado de trabalho
-                    e incentivar o uso consciente da tecnologia.
-                </p>
-            </article>
-
-            <article>
-                <h3>💬 Projeto Cuidar é Crescer</h3>
-                <img src="imagens/projeto2.jpg" alt="Atendimento psicológico coletivo" width="400">
-                <p>
-                    Iniciativa que promove rodas de conversa e atendimento psicológico gratuito 
-                    para jovens em situação de vulnerabilidade. Acreditamos que saúde mental também é base para o futuro.
-                </p>
-            </article>
-
-            <article>
-                <h3>🎨 Projeto Arte e Vida</h3>
-                <img src="imagens/projeto3.jpg" alt="Jovens pintando murais coloridos" width="400">
-                <p>
-                    Através da arte, incentivamos a expressão criativa e o fortalecimento da identidade. 
-                    Oficinas de pintura, dança e teatro ajudam os jovens a desenvolverem confiança e trabalho em equipe.
-                </p>
-            </article>
-
-            <section>
-            <h2>Voluntariado</h2>
-            <p>
-                Quer fazer parte dessa transformação?
-                Inscreva-se como voluntário e ajude a levar oportunidades para quem mais precisa.
-            </p>
-            <a href="#" onclick="carregarPagina('cadastro')">Quero ser voluntário</a>
-        </section>
-
-        <section>
-            <h2>Como Doar</h2>
-            <p>
-                Suas doações mantêm nossos projetos vivos e ajudam a mudar histórias. 
-                Toda contribuição é muito bem-vinda e faz a diferença.
-            </p>
-            <ul>
-                <li> Doação via Pix: pix@futurofeliz.org.br</li>
-                <li>🏦 Depósito bancário: Banco Social - Ag. 1234 - C/C 56789-0</li>
-                <li>🪙 Doe seu tempo: participe como voluntário!</li>
-            </ul>
-        </section>
-
-    </main>
-
-<script src="css/js/script.js"></script>
-</body>
-</html>
+  <section aria-labelledby="titulo-doacoes">
+    <h2 id="titulo-doacoes">Como Doar</h2>
+    <p>
+      Suas doações mantêm nossos projetos vivos e ajudam a mudar histórias. 
+      Toda contribuição é muito bem-vinda e faz a diferença.
+    </p>
+    <ul>
+      <li><strong>💰 Doação via Pix:</strong> <span aria-label="Chave Pix">pix@futurofeliz.org.br</span></li>
+      <li><strong>🏦 Depósito bancário:</strong> Banco Social - Ag. 1234 - C/C 56789-0</li>
+      <li><strong>🪙 Doe seu tempo:</strong> participe como voluntário!</li>
+    </ul>
+  </section>
+</main>

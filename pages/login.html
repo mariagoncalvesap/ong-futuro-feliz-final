@@ -1,23 +1,83 @@
-<section>
-  <h2>Entrar na Plataforma</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ONG Futuro Feliz</title>
 
-  <form id="loginForm">
-    <label for="userType">Tipo de usuário:</label>
-    <select id="userType" required>
-      <option value="">Selecione</option>
-      <option value="admin">Administrador</option>
-      <option value="voluntario">Voluntário</option>
-      <option value="doador">Doador</option>
-    </select>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+<body>
+  <header>
+    <h1>ONG Futuro Feliz</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="login.html" aria-current="page">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <label for="password">Senha:</label>
-    <input type="password" id="password" placeholder="Digite sua senha" required>
+  <main aria-labelledby="titulo-login">
+    <section aria-labelledby="titulo-login">
+      <h2 id="titulo-login">Entrar na Plataforma</h2>
 
-    <button type="submit">Entrar</button>
-  </form>
+      <form id="loginForm" aria-describedby="instrucao-login">
+        <p id="instrucao-login">
+          Preencha os campos abaixo para acessar a plataforma da ONG Futuro Feliz.
+        </p>
 
-  <p id="error" style="color:red; margin-top:10px;"></p>
-</section>
+        <div class="form-group">
+          <label for="userType">Tipo de usuário:</label>
+          <select id="userType" name="userType" required aria-required="true">
+            <option value="">Selecione</option>
+            <option value="admin">Administrador</option>
+            <option value="voluntario">Voluntário</option>
+            <option value="doador">Doador</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Digite seu e-mail"
+            autocomplete="email"
+            required 
+            aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Digite sua senha"
+            autocomplete="current-password"
+            required 
+            aria-required="true">
+        </div>
+
+        <button type="submit" aria-label="Fazer login na plataforma">Entrar</button>
+      </form>
+
+      <p id="error" role="alert" style="color:red; margin-top:10px;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Futuro Feliz - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
