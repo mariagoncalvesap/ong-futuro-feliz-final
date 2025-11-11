@@ -5,7 +5,8 @@ import { carregarUsuario } from "./storage.js";
 export function carregarPagina(pagina) {
   const conteudo = document.getElementById("conteudo");
 
-  fetch(`./pages/${pagina}.html`)
+  
+  fetch(`./${pagina}.html`)
     .then((res) => {
       if (!res.ok) throw new Error("Página não encontrada");
       return res.text();
@@ -13,18 +14,15 @@ export function carregarPagina(pagina) {
     .then((html) => {
       conteudo.innerHTML = html;
 
-      
       conteudo.setAttribute("tabindex", "-1");
       conteudo.focus();
 
-      
       if (pagina === "cadastro") {
         inicializarFormulario();
       } else if (pagina === "login") {
         inicializarLogin();
       }
 
-      
       carregarUsuario();
     })
     .catch((erro) => {
@@ -37,7 +35,6 @@ export function carregarPagina(pagina) {
     });
 }
 
-// Torna a função acessível e adiciona os eventos nos links
 window.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("a[data-pagina]");
   links.forEach(link => {
@@ -48,7 +45,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  
   carregarPagina("home");
 });
 
