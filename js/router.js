@@ -18,9 +18,9 @@ export function carregarPagina(pagina) {
       conteudo.focus();
 
       
-      if (pagina === "cadastro.html") {
+      if (pagina === "cadastro") {
         inicializarFormulario();
-      } else if (pagina === "login.html") {
+      } else if (pagina === "login") {
         inicializarLogin();
       }
 
@@ -37,5 +37,19 @@ export function carregarPagina(pagina) {
     });
 }
 
+// Torna a função acessível e adiciona os eventos nos links
+window.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("a[data-pagina]");
+  links.forEach(link => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const pagina = link.getAttribute("data-pagina");
+      carregarPagina(pagina);
+    });
+  });
+
+  
+  carregarPagina("home");
+});
 
 window.carregarPagina = carregarPagina;
