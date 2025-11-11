@@ -7,7 +7,6 @@ function salvarDadosUsuario(nome) {
 function carregarUsuario() {
   const nome = localStorage.getItem("usuario");
   const usuarioLogado = localStorage.getItem("usuarioLogado");
-
   const saudacao = document.getElementById("saudacao");
 
   if (saudacao) {
@@ -31,3 +30,5 @@ function sairUsuario() {
   alert("Você saiu da sua conta!");
   carregarPagina("home");
 }
+
+export { salvarDadosUsuario, carregarUsuario, sairUsuario};
