@@ -18,9 +18,9 @@ export function carregarPagina(pagina) {
       conteudo.focus();
 
       
-      if (pagina === "cadastro") {
+      if (pagina === "cadastro.html") {
         inicializarFormulario();
-      } else if (pagina === "login") {
+      } else if (pagina === "login.html") {
         inicializarLogin();
       }
 

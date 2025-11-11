@@ -28,7 +28,7 @@ function sairUsuario() {
   const saudacao = document.getElementById("saudacao");
   if (saudacao) saudacao.textContent = "";
   alert("Você saiu da sua conta!");
-  carregarPagina("home");
+  carregarPagina("home.html");
 }
 
 export { salvarDadosUsuario, carregarUsuario, sairUsuario};
