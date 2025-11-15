@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ONG Futuro Feliz</title>
 
-  <!-- Descrição da pagina p leitores de tela --> 
-<meta name="description" content="ONG Futuro Feliz - projetos sociais e oportunidades de voluntariado.">
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/componentes.css">
@@ -16,36 +14,34 @@
 <body>
   
   <header>
-    <header role="banner">
     <h1>ONG Futuro Feliz</h1>
-    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu">☰</button>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
 
-    <nav role="navigation" aria-label="Menu principal">
-  <ul id="menu" class="menu">
-    <li><a href="#" data-pagina="home">Início</a></li>
-    <li><a href="#" data-pagina="projetos">Projetos</a></li>
-    <li><a href="#" data-pagina="cadastro">Cadastro</a></li>
-    <li><a href="#" data-pagina="login">Login</a></li>
-  </ul>
-</nav>
+    <nav>
+      <ul id="menu" class="menu">
+        <li><a href="#" onclick="carregarPagina('home')">Início</a></li>
+        <li><a href="#" onclick="carregarPagina('projetos')">Projetos</a></li>
+        <li><a href="#" onclick="carregarPagina('cadastro')">Cadastro</a></li>
+        <li><a href="#" onclick="carregarPagina('login')">Login</a></li>
+      </ul>
+    </nav>
   </header>
 
  
   <section id="saudacao" class="saudacao"></section>
 
  
-  <main id="conteudo" role="main" tabindex="-1"></main>
+  <main id="conteudo"></main>
 
  
-  <footer role="contentinfo">
+  <footer>
     <p>&copy; 2025 ONG Futuro Feliz. Todos os direitos reservados.</p>
   </footer>
 
   
- 
+
 <script src="js/storage.js"></script>
 <script src="js/formValidation.js"></script>
-<script type="module" src="js/router.js"></script>
-
-</body>
+<script src="js/router.js"></script>
+<script src="js/main.js"></script>
 </html>

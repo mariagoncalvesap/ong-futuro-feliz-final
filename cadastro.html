@@ -1,93 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Voluntário - ONG Futuro Feliz</title>
+<section>
+  <h2>Formulário de Cadastro de Voluntário</h2>
+  <p>Preencha os campos abaixo para se cadastrar como voluntário e fazer parte da transformação!</p>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/componentes.css">
-  <link rel="stylesheet" href="css/responsivo.css">
-</head>
+  <form id="formCadastro">
 
-<body>
-  <header>
-    <h1>ONG Futuro Feliz</h1>
-    <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
+    <fieldset>
+      <legend>Informações Pessoais</legend>
 
-  <main aria-labelledby="titulo-cadastro">
-    <section aria-labelledby="titulo-cadastro">
-      <h2 id="titulo-cadastro">Formulário de Cadastro de Voluntário</h2>
-      <p id="instrucao-cadastro">
-        Preencha os campos abaixo para se cadastrar como voluntário e fazer parte da transformação!
-      </p>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
 
-      <form id="formCadastro" aria-describedby="instrucao-cadastro">
-        <fieldset>
-          <legend>Informações Pessoais</legend>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
 
-          <label for="nome">Nome Completo:</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required aria-required="true">
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required aria-required="true">
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
 
-          <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required aria-required="true" inputmode="numeric">
+      <label for="data_nascimento">Data de Nascimento:</label>
+      <input type="date" id="data_nascimento" name="data_nascimento" required>
+    </fieldset>
 
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required aria-required="true">
+    <fieldset>
+      <legend>Endereço</legend>
 
-          <label for="data_nascimento">Data de Nascimento:</label>
-          <input type="date" id="data_nascimento" name="data_nascimento" required aria-required="true">
-        </fieldset>
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, complemento">
 
-        <fieldset>
-          <legend>Endereço</legend>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required placeholder="00000-000">
 
-          <label for="endereco">Endereço:</label>
-          <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required aria-required="true">
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
 
-          <label for="cep">CEP:</label>
-          <input type="text" id="cep" name="cep" placeholder="00000-000" required aria-required="true" inputmode="numeric">
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione...</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="MG">MG</option>
+        <option value="RS">RS</option>
+        <option value="BA">BA</option>
+        <option value="PE">PE</option>
+        <option value="PR">PR</option>
+        <option value="SC">SC</option>
+        <option value="DF">DF</option>
+      </select>
+    </fieldset>
 
-          <label for="cidade">Cidade:</label>
-          <input type="text" id="cidade" name="cidade" required aria-required="true">
-
-          <label for="estado">Estado:</label>
-          <select id="estado" name="estado" required aria-required="true">
-            <option value="">Selecione...</option>
-            <option value="SP">SP</option>
-            <option value="RJ">RJ</option>
-            <option value="MG">MG</option>
-            <option value="RS">RS</option>
-            <option value="BA">BA</option>
-            <option value="PE">PE</option>
-            <option value="PR">PR</option>
-            <option value="SC">SC</option>
-            <option value="DF">DF</option>
-          </select>
-        </fieldset>
-
-        <button type="submit" aria-label="Enviar formulário de cadastro">Enviar Cadastro</button>
-        <p id="erro" role="alert" style="color:red;"></p>
-        <p id="saudacao" role="status" style="color:green;"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 ONG Futuro Feliz - Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+    <button type="submit">Enviar Cadastro</button>
+    <p id="erro" style="color:red;"></p>
+    <p id="saudacao" style="color:green;"></p>
+  </form>
+</section>
