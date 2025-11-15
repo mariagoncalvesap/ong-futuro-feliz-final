@@ -1,4 +1,4 @@
-
+/* ======= AJUSTES GERAIS ======= */
 @media (max-width: 768px) {
   nav ul li {
     display: block;
@@ -23,7 +23,7 @@
   }
 }
 
-/* MENU HAMBÚRGUER  */
+/* ======= MENU HAMBÚRGUER ======= */
 
 /* Botão do menu */
 .menu-toggle {
@@ -35,8 +35,9 @@
   cursor: pointer;
 }
 
-/*  MENU MOBILE*/
+/* ======= MENU MOBILE ======= */
 @media (max-width: 768px) {
+  /* Ícone visível no mobile */
   .menu-toggle {
     display: block;
     position: absolute;
@@ -44,11 +45,11 @@
     right: 20px;
   }
 
-
+  /* Menu escondido inicialmente */
   nav ul.menu {
     display: none;
     flex-direction: column;
-    background-color: var(--cor-primaria); 
+    background-color: var(--cor-primaria); /* 👈 mantém o fundo escuro */
     position: absolute;
     top: 60px;
     right: 0;
@@ -59,18 +60,19 @@
     z-index: 999;
   }
 
-  
+  /* Quando ativo */
   nav ul.menu.active {
     display: flex;
   }
 
+  /* Itens do menu */
   nav ul.menu li {
     text-align: center;
   }
 
   /* Links do menu */
   nav ul.menu li a {
-    color: white; 
+    color: white; /* 👈 texto branco visível */
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -81,7 +83,7 @@
   }
 }
 
-/*MENU DESKTOP */
+/* ======= MENU DESKTOP ======= */
 @media (min-width: 769px) {
   nav ul.menu {
     display: flex;
