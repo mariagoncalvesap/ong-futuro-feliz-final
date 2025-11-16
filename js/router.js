@@ -2,7 +2,7 @@
 function carregarPagina(pagina) {
   const conteudo = document.getElementById("conteudo");
 
-  fetch(`./pages/${pagina}.html`)
+  fetch(`pages/${pagina}.html`)
     .then((res) => {
       if (!res.ok) throw new Error("Página não encontrada");
       return res.text();
