@@ -100,3 +100,19 @@ button {
 button:hover {
     background-color: var(--cor-botao-hover);
 }
+
+/*foco*/
+
+a:focus 
+button:focus,
+input:focus,
+textarea:focus,
+select:focus{
+  outline: 3px solid #ffcc00;
+  outline-offset: 4px;
+}
+
+/*menu*/
+#menu-toggle {
+  b
+}
