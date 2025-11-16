@@ -19,5 +19,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  
+//  ACESSIBILIDADE: ALTO CONTRASTE
+
+const botaoContraste = document.getElementById("btn-contraste");
+
+botaoContraste.addEventListener("click", () => {
+  document.documentElement.classList.toggle("alto-contraste");
+
+  
+  if (document.documentElement.classList.contains("alto-contraste")) {
+    localStorage.setItem("contraste", "ativo");
+  } else {
+    localStorage.removeItem("contraste");
+  }
+});
+
+
+if (localStorage.getItem("contraste") === "ativo") {
+  document.documentElement.classList.add("alto-contraste");
+}
+
       carregarUsuario();
     });
