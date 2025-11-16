@@ -27,6 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  
+  // CONTROLE DE TAMANHO DA FONTE 
+let tamanhoFonteAtual = 100; 
+
+document.getElementById("aumentar-fonte").addEventListener("click", () => {
+    tamanhoFonteAtual += 10;
+    document.body.style.fontSize = tamanhoFonteAtual + "%";
+});
+
+document.getElementById("diminuir-fonte").addEventListener("click", () => {
+    if (tamanhoFonteAtual > 70) { 
+        tamanhoFonteAtual -= 10;
+        document.body.style.fontSize = tamanhoFonteAtual + "%";
+    }
+});
   carregarUsuario();
 });
